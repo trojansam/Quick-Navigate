@@ -1,0 +1,47 @@
+{
+    "manifest_version": 2,
+    "name": "Quick Navigate",
+    "version": "0.1",
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_popup": "index.html"
+    },
+    "icons": { "16": "logo.png",
+        "48": "logo.png",
+       "128": "logo.png" },
+    "permissions": [
+        "tabs"
+    ],
+    "background":
+    {
+    "scripts": ["background.js"],
+    "persistent": true
+    },
+    "commands": {
+        "lea": {
+            "suggested_key": {
+                "default": "Alt+Shift+L",
+                "windows": "Alt+Shift+L",
+                "mac": "Alt+Shift+L"
+                
+            },
+            "description": "Toggle feature LEA"
+        },
+        "mio": {
+            "suggested_key": {
+                "default": "Alt+Shift+M",
+                "windows": "Alt+Shift+M",
+                "mac": "Alt+Shift+M"
+            },
+            "description": "Toggle feature MIO"
+        },
+        "sdl": {
+            "suggested_key": {
+                "default": "Alt+Shift+S",
+                "windows": "Alt+Shift+S",
+                "mac": "Alt+Shift+S"
+            },
+            "description": "Toggle feature Schedule"
+        }
+    }
+}
